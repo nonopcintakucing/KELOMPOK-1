@@ -6,6 +6,7 @@ $user_demo = "admin";
 $pass_demo = "admin123";
 $message = "";
 $type = "";
+
 // Cek jika form dikirim
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $input_user = $_POST["username"] ?? "";
@@ -52,7 +53,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             margin: 8px 0;
             border: 1px solid #ccc;
             border-radius: 4px;
-            box-sizing: border-box;
         }
         .login-box button {
             width: 100%;
@@ -62,7 +62,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            font-size: 16px;
             margin-top: 10px;
         }
         .login-box button:hover { background-color: #1a7be0; }
@@ -71,9 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             padding: 8px;
             margin-bottom: 10px;
             border-radius: 4px;
-            font-size: 14px;
         }
-        .success { background-color: #d4edda; color: #155724; }
         .error { background-color: #f8d7da; color: #721c24; }
     </style>
 </head>
