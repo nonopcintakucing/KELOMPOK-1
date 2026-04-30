@@ -1,8 +1,9 @@
 <?php
-include 'koneksi.php';
+include "koneksi.php";
 
 $id = $_GET['id'];
-mysqli_query($conn, "DELETE FROM tb_penjualan WHERE id=$id");
 
-header("Location: tambah.php");
+mysqli_query($koneksi, "DELETE FROM produk WHERE id_produk='$id'");
+
+header("Location: dataproduk.php");
 ?>

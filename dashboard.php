@@ -76,7 +76,7 @@
         <p>Selamat datang di <b>Data Penjualan</b></p>
 
         <a href="crud.php" class="btn">📊 Data Penjualan</a>
-        <a href="#" class="btn">📦 Data Product</a>
+        <a href="dataproduk.php" class="btn">📦 Data Product</a>
         <a href="tampilanproduk.php" class="btn">Tampilan Produk</a>
         <a href="kelompok.html"class="btn"> Foto Kelompok</a>
         <a href="logout.php" class="btn logout">🚪 Logout</a>
