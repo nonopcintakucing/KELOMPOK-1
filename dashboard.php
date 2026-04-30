@@ -72,7 +72,7 @@
 <body>
 
     <div class="container">
-        <h2>👋 Hiii Admin</h2>
+        <h2>👋 Hiii Emregit</h2>
         <p>Selamat datang di <b>Data Penjualan</b></p>
 
         <a href="crud.php" class="btn">📊 Data Penjualan</a>
