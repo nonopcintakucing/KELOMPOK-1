@@ -1,7 +1,8 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "toko");
+include 'koneksi.php';
 
-$result = mysqli_query($conn, "SELECT * FROM produk");
+$no = 1;
+$data = mysqli_query($conn, "SELECT * FROM produk");
 ?>
 
 <!DOCTYPE html>
@@ -70,8 +71,7 @@ $result = mysqli_query($conn, "SELECT * FROM produk");
         <th>Aksi</th>
     </tr>
 
-    <?php $no = 1; ?>
-    <?php while ($row = mysqli_fetch_assoc($result)) : ?>
+    <?php while($row = mysqli_fetch_assoc($data)) { ?>
     <tr>
         <td><?= $no++; ?></td>
         <td><?= $row['nama']; ?></td>
@@ -82,7 +82,7 @@ $result = mysqli_query($conn, "SELECT * FROM produk");
             <a href="hapus.php?id=<?= $row['id']; ?>" class="btn hapus" onclick="return confirm('Yakin hapus?')">Hapus</a>
         </td>
     </tr>
-    <?php endwhile; ?>
+    <?php } ?>
 
 </table>
 
